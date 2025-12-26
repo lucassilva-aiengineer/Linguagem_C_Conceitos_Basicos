@@ -27,7 +27,8 @@ int main(){
     float item2 = 10.00;
     float item3 = 100.99; 
 
-    printf("Item 1: $%8.2f\n", item1); // O dois é quantidade de casas decímais que seram exibidas após a vírgula. 
+    // Este sinal de -, faz com que o espaço extra deixe de ser aplicado. 
+    printf("Item 1: $%-8.2f\n", item1); // O dois é quantidade de casas decímais que seram exibidas após a vírgula. 
     printf("Item 2: $%8.2f\n", item2); // O oito são a largura de campos máxima até o fim da linha, afim de que 
     printf("Item 3: $%8.2f\n", item3); // haja um espaço esquerda. mas, mantendo o alinhamento pela direito  .
 
