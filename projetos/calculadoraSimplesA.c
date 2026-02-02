@@ -1,10 +1,12 @@
 #include <stdio.h> 
+#include <math.h>
 
 int main(){
 
     char opcoes;
     float num1;
     float num2;
+    float indice; 
 
     double resultado; 
 
@@ -72,11 +74,42 @@ int main(){
 
             break;
 
+        case 'r':
+
+            printf("Indique o indice: ");
+            scanf("%f", &indice);
+
+            printf("Indique o radicando: ");
+            scanf("%f", &num1);
+
+            printf("Indique o expoente do radicando: ");
+            scanf("%f", &num2); 
+
+            if (indice % 2 == 0){
+
+                if (pow(num1, num2) < 0){
+
+                    printf("Esta operacao nao pode ser realizada!");
+                    printf("O indice par nao aceita um radicando negativo.") ;
+
+                } else { 
+
+                    resultado = pow(num1, (num2 / indice)); 
+
+                    printf("Raiz de %.2f elevado a %.2f no indice %.2f = %.2lf", num1, num2, indice, resultado);
+                }
+
+            } else {
+
+                resultado = pow(num1, (num2 / indice)); 
+                printf("Raiz de %.2f elevado a %.2f no indice %.2f = %.2lf", num1, num2, indice, resultado); 
+
+            }
+
+            break; 
 
         default: 
-
             printf("Opcao nao encontrada.");
-            // break;
 
     }
 
