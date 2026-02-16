@@ -7,7 +7,7 @@ double adicao(double parcelaA,  double parcelaB){
     double resultado = parcelaA + parcelaB; 
 
     return resultado;
-
+}
 
 double subtracao(double minuendo, double subtraendo){
 
@@ -34,7 +34,7 @@ double divisao(double numerador, double denominador){
 // No caso esta função só vai verificar se a potencicao pode ser feita. 
 double potenciacao(double base, double expoente){
 
-    if (base != 0 || exepoente != 0){
+    if (base != 0 || expoente != 0){
 
         double resultado = pow(base, expoente);
 
