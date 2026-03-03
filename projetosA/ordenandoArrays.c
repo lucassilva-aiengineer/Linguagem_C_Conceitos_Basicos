@@ -26,6 +26,7 @@
 // Versão Professor.
 
 
+// Este é conhecido bubble sort
 // Uma função que ordena. 
 void sort(int array[], int size)
 {
