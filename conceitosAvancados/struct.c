@@ -8,7 +8,7 @@
 #include <string.h>
 
 
-struct Colaborador {
+struct Colaborador { 
 
     char nome[20];
     double salario;
